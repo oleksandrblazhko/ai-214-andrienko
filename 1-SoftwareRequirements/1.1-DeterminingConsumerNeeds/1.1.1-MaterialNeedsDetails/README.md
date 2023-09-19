@@ -1,2 +1,2 @@
 ### Деталізація матеріальних потреб
-![MindMap](/SoftwareRequirements/DeterminingConsumerNeeds/MaterialNeedsDetails/MindMap_Andriienko.jpg)
+![MindMap](/1-SoftwareRequirements/1.1-DeterminingConsumerNeeds/1.1.1-MaterialNeedsDetails/MindMap_Andriienko.jpg)
