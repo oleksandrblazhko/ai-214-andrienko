@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net" modified="2023-09-26T16:35:21.144Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="ocFq1FCxz3NcKFdwvgJi" version="21.8.2" type="device">
+  <diagram name="Страница — 1" id="GnSCQww6XoY2D_I-w1qQ">
+    <mxGraphModel dx="1029" dy="718" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-25" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;font color=&quot;#6600cc&quot;&gt;Mental&lt;/font&gt;&lt;font color=&quot;#006600&quot;&gt;Hub&lt;/font&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#666666;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1440" y="610" width="250" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-26" value="&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Сон&lt;/span&gt;&lt;/font&gt;" style="strokeWidth=0;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.pwField;strokeColor=#FFFFFF;mainText=;align=left;fontColor=#666666;fontSize=17;spacingLeft=3;fontFamily=Ubuntu;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DUbuntu;" parent="1" vertex="1">
+          <mxGeometry x="1537.01" y="680" width="55.94" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-27" value="&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.pwField;strokeColor=#000000;mainText=;align=left;fontColor=#666666;fontSize=17;spacingLeft=3;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1490" y="770" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-28" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.pwField;strokeColor=#0F0F0F;mainText=;align=left;fontColor=#666666;fontSize=17;spacingLeft=3;" parent="1" vertex="1">
+          <mxGeometry x="1490" y="830" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-29" value="&lt;font face=&quot;Ubuntu&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;Зв&#39;язатись з &lt;br&gt;консультантом&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1504.99" y="765" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-30" value="&lt;font size=&quot;1&quot; face=&quot;Ubuntu&quot;&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Рекомендації&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1509.99" y="830" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-31" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.pwField;strokeColor=#0F0F0F;mainText=;align=left;fontColor=#666666;fontSize=17;spacingLeft=3;" parent="1" vertex="1">
+          <mxGeometry x="1489.99" y="890" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-118" value="&lt;font size=&quot;1&quot; face=&quot;Ubuntu&quot;&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Відстеження сну&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1505.01" y="890" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-119" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;font color=&quot;#6600cc&quot;&gt;Mental&lt;/font&gt;&lt;font color=&quot;#006600&quot;&gt;Hub&lt;/font&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#666666;mainText=;fontSize=17;labelBackgroundColor=none;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1806" y="610" width="254" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-134" value="&lt;font color=&quot;#000000&quot;&gt;Доброго дня...&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#666666;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;whiteSpace=wrap;strokeColor=#000000;mainText=" parent="1" vertex="1">
+          <mxGeometry x="1806" y="1021" width="254" height="28.82" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-127" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.mail;" parent="1" vertex="1">
+          <mxGeometry x="2020" y="1027.16" width="30" height="16.5" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-135" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.containers.userMale;strokeColor=#000000;strokeColor2=#008cff;" parent="1" vertex="1">
+          <mxGeometry x="1806" y="640" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-136" value="&lt;font color=&quot;#000000&quot;&gt;Консультант&lt;br&gt;******** ********&lt;br&gt;&lt;/font&gt;" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.textBox;fontColor=#666666;align=left;fontSize=17;spacingLeft=4;spacingTop=-3;whiteSpace=wrap;strokeColor=#000000;mainText=" parent="1" vertex="1">
+          <mxGeometry x="1876" y="640" width="184" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fYolHv9IbK95dR3w9ptZ-138" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="fYolHv9IbK95dR3w9ptZ-27" target="fYolHv9IbK95dR3w9ptZ-119" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1800" y="890" as="sourcePoint" />
+            <mxPoint x="1850" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1750" y="785" />
+              <mxPoint x="1750" y="830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
