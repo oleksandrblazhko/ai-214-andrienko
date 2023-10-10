@@ -1,0 +1,271 @@
+{
+  "title": "Record of user",
+  "description": "This document records the details of a user",
+  "type": "object",
+  "properties": {
+    "Користувач": {
+      "type": "object",
+      "properties": {
+        "Логін": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 15
+        },
+        "Пароль": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 25
+        },
+        "Ел. Пошта": {
+          "type": "string"
+        },
+        "Запит на замовлення": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Запит на замовлення"
+          }
+        }
+      },
+      "required": [
+        "Логін",
+        "Пароль"
+      ]
+    },
+    "Інформація про користувача": {
+      "type": "object",
+      "properties": {
+        "Вік": {
+          "type": "integer",
+          "minimum": 15
+        },
+        "ПІБ": {
+          "type": "string",
+          "maxLength": 30
+        }
+      },
+      "required": [
+        "Вік",
+        "ПІБ"
+      ]
+    },
+    "Сомнолог-консультант": {
+      "allOf": [
+        {
+          "$ref": "#/properties/Користувач"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "Стаж праці": {
+              "type": "string"
+            },
+            "Рейтинг": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "Запит на консультацію": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Запит на консультацію"
+              }
+            },
+            "Відповідь на запит": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Відповідь на запит"
+              }
+            }
+          },
+          "required": [
+            "Стаж праці",
+            "Рейтинг"
+          ]
+        }
+      ]
+    },
+    "Запит на консультацію": {
+      "type": "object",
+      "properties": {
+        "Проблема": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "Дата": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "Проблема",
+        "Дата"
+      ]
+    },
+    "Відповідь на запит": {
+      "type": "object",
+      "properties": {
+        "Текст відповіді": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "Дата": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "Текст відповіді",
+        "Дата"
+      ]
+    },
+    "Запит на замовлення": {
+      "type": "object",
+      "properties": {
+        "Дата": {
+          "type": "string",
+          "format": "date"
+        },
+        "Ціна": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "Дата",
+        "Ціна"
+      ]
+    },
+    "Книга": {
+      "type": "object",
+      "properties": {
+        "Назва": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "Автор": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "Ціна": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "Назва",
+        "Автор",
+        "Ціна"
+      ]
+    },
+    "Онлайн-бібліотека": {
+      "type": "object",
+      "properties": {
+        "Назва": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "Номер телефону": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 13
+        },
+        "Замовлення": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Замовлення"
+          }
+        },
+        "Запит на замовлення": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Запит на замовлення"
+          }
+        }
+      },
+      "required": [
+        "Назва",
+        "Номер телефону"
+      ]
+    },
+    "Замовлення": {
+      "type": "object",
+      "properties": {
+        "Статус": {
+          "type": "string",
+          "maxLength": 30
+        },
+        "Дата": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "Статус",
+        "Дата"
+      ]
+    }
+  },
+  "required": [
+    "Користувач"
+  ],
+  "definitions": {
+    "Запит на замовлення": {
+      "type": "object",
+      "properties": {
+        "Дата": {
+          "type": "string",
+          "format": "date"
+        },
+        "Ціна": {
+          "type": "number",
+          "minimum": 0
+        },
+        "Книга": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Книга"
+          }
+        }
+      },
+      "required": [
+        "Дата",
+        "Ціна",
+        "Книга"
+      ]
+    },
+    "Запит на консультацію": {
+      "type": "object",
+      "properties": {
+        "Проблема": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "Дата": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "Проблема",
+        "Дата"
+      ]
+    },
+    "Відповідь на запит": {
+      "type": "object",
+      "properties": {
+        "Текст відповіді": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "Дата": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "Текст відповіді",
+        "Дата"
+      ]
+    }
+  }
+}
