@@ -1,0 +1,327 @@
+{
+  "title": "Record of user",
+  "description": "This document records the details of a user",
+  "type": "object",
+  "properties": {
+    "Користувач": {
+      "description": "User details",
+      "type": "object",
+      "properties": {
+        "user id": {
+          "description": "Ідентифікатор користувача",
+          "type": "number"
+        },
+        "Логін": {
+          "description": "Логін користувача",
+          "type": "string"
+        },
+        "Пароль": {
+          "description": "Пароль користувача",
+          "type": "string"
+        },
+        "Ел. Пошта": {
+          "description": "Ел. пошта користувача",
+          "type": "string"
+        },
+        "Інформація про користувача": {
+          "description": "Інформація про користувача",
+          "type": "object",
+          "properties": {
+            "user id": {
+              "description": "Ідентифікатор користувача",
+              "type": "number"
+            },
+            "Вік": {
+              "description": "Вік користувача",
+              "type": "number"
+            },
+            "ПІБ": {
+              "description": "ПІБ користувача",
+              "type": "string"
+            }
+          },
+          "required": [
+            "user id",
+            "Вік",
+            "ПІБ"
+          ]
+        },
+        "Запит на замовлення": {
+          "description": "Запити на замовлення користувача",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "order id": {
+                "description": "Ідентифікатор замовлення",
+                "type": "number"
+              },
+              "Дата": {
+                "description": "Дата початку опрацювання замовлення",
+                "type": "string"
+              }
+            },
+            "required": [
+              "order id",
+              "Дата"
+            ]
+          }
+        }
+      },
+      "required": [
+        "user id",
+        "Логін",
+        "Пароль",
+        "Ел. Пошта",
+        "Інформація про користувача"
+      ]
+    },
+    "Сомнолог-консультант": {
+      "description": "Sleep consultant details",
+      "type": "object",
+      "properties": {
+        "consultant id": {
+          "description": "Ідентифікатор сомнолог-консультанта",
+          "type": "number"
+        },
+        "user id": {
+          "description": "Ідентифікатор користувача",
+          "type": "number"
+        },
+        "Стаж праці": {
+          "description": "Стаж праці консультанта",
+          "type": "string"
+        },
+        "Рейтинг": {
+          "description": "Рейтинговий бал консультанта",
+          "type": "number"
+        },
+        "Запит на консультацію": {
+          "description": "Запити на консультацію сомнолог-консультанта",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "consult request id": {
+                "description": "Ідентифікатор запиту на консультацію",
+                "type": "number"
+              },
+              "Проблема": {
+                "description": "Опис проблеми користувача",
+                "type": "string"
+              },
+              "Дата": {
+                "description": "Дата створення запиту",
+                "type": "string"
+              }
+            },
+            "required": [
+              "consult request id",
+              "Проблема",
+              "Дата"
+            ]
+          }
+        },
+        "Відповідь на запит": {
+          "description": "Відповіді на запити користувачів",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "consult response id": {
+                "description": "Ідентифікатор відповіді на запит",
+                "type": "number"
+              },
+              "Текст відповіді": {
+                "description": "Текст відповіді на запит щодо консультації",
+                "type": "string"
+              },
+              "Дата": {
+                "description": "Дата відповіді на запит",
+                "type": "string"
+              },
+              "request id": {
+                "description": "Ідентифікатор запиту, на який йде відповідь",
+                "type": "number"
+              }
+            },
+            "required": [
+              "consult response id",
+              "Текст відповіді",
+              "Дата",
+              "request id"
+            ]
+          }
+        }
+      },
+      "required": [
+        "consultant id",
+        "user id",
+        "Стаж праці",
+        "Рейтинг",
+        "Запит на консультацію",
+        "Відповідь на запит"
+      ]
+    },
+    "Запит на замовлення": {
+      "description": "Order request details",
+      "type": "object",
+      "properties": {
+        "order id": {
+          "description": "Ідентифікатор запиту на замовлення",
+          "type": "number"
+        },
+        "Дата": {
+          "description": "Дата створення запиту",
+          "type": "string"
+        },
+        "Ціна": {
+          "description": "Ціна поточного замовлення",
+          "type": "number"
+        },
+        "Книга": {
+          "description": "Список книг у замовленні",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "book id": {
+                "description": "Ідентифікатор книги",
+                "type": "number"
+              },
+              "Назва": {
+                "description": "Назва книги",
+                "type": "string"
+              },
+              "Автор": {
+                "description": "ПІБ автора книги",
+                "type": "string"
+              },
+              "Ціна": {
+                "description": "Ціна електронної копії книги",
+                "type": "number"
+              }
+            },
+            "required": [
+              "book id",
+              "Назва",
+              "Автор",
+              "Ціна"
+            ]
+          }
+        }
+      },
+      "required": [
+        "order id",
+        "Дата",
+        "Ціна",
+        "Книга"
+      ]
+    },
+    "Книга": {
+      "description": "Book details",
+      "type": "object",
+      "properties": {
+        "book id": {
+          "description": "Ідентифікатор книги",
+          "type": "number"
+        },
+        "Назва": {
+          "description": "Назва книги",
+          "type": "string"
+        },
+        "Автор": {
+          "description": "ПІБ автора книги",
+          "type": "string"
+        },
+        "Ціна": {
+          "description": "Ціна електронної копії книги",
+          "type": "number"
+        }
+      },
+      "required": [
+        "book id",
+        "Назва",
+        "Автор",
+        "Ціна"
+      ]
+    },
+    "Онлайн-бібліотека": {
+      "description": "Online library details",
+      "type": "object",
+      "properties": {
+        "library id": {
+          "description": "Ідентифікатор онлайн-бібліотеки",
+          "type": "number"
+        },
+        "Назва": {
+          "description": "Назва онлайн бібліотеки",
+          "type": "string"
+        },
+        "Номер телефону": {
+          "description": "Номер телефону для зв'язку з представниками онлайн-бібліотеки",
+          "type": "string"
+        },
+        "Замовлення": {
+          "description": "Список замовлень у онлайн-бібліотеці",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "order id": {
+                "description": "Ідентифікатор замовлення",
+                "type": "number"
+              },
+              "Статус": {
+                "description": "Статус виконання замовлення",
+                "type": "string"
+              },
+              "Дата": {
+                "description": "Дата початку опрацювання замовлення",
+                "type": "string"
+              }
+            },
+            "required": [
+              "order id",
+              "Статус",
+              "Дата"
+            ]
+          }
+        },
+        "Запит на замовлення": {
+          "description": "Список запитів на замовлення у онлайн-бібліотеці",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "order request id": {
+                "description": "Ідентифікатор запиту на замовлення",
+                "type": "number"
+              },
+              "Дата": {
+                "description": "Дата створення запиту",
+                "type": "string"
+              },
+              "Ціна": {
+                "description": "Ціна поточного замовлення",
+                "type": "number"
+              }
+            },
+            "required": [
+              "order request id",
+              "Дата",
+              "Ціна"
+            ]
+          }
+        }
+      },
+      "required": [
+        "library id",
+        "Назва",
+        "Номер телефону",
+        "Замовлення",
+        "Запит на замовлення"
+      ]
+    }
+  }
+}
