@@ -8,9 +8,8 @@
       "properties": {
         "Логін": {
           "type": "string",
-          "minLength": 5,
-          "maxLength": 15,
-          "description": "Логін користувача"
+          "description": "Логін користувача",
+          "pattern": "^[A-Za-z0-9_-]{3,20}$"
         },
         "Пароль": {
           "type": "string",
@@ -18,12 +17,13 @@
           "maxLength": 25,
           "description": "Пароль користувача"
         },
-        "Ел. Пошта": {
+        "Ел.Пошта": {
           "type": "string",
-          "description": "Ел. пошта користувача"
+          "description": "Ел. пошта користувача",
+          "pattern": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$"
         }
       },
-      "required": ["Логін", "Пароль", "Ел. Пошта"]
+      "required": ["Логін", "Пароль", "Ел.Пошта"]
     },
     "Інформація про користувача": {
       "type": "object",
