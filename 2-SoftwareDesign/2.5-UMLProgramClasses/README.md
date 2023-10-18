@@ -1,2 +1,2 @@
 ### UML-діаграма програмних класів
-![UML-ProgramClasses](/2-SoftwareDesign/2.5-UMLProgramClasses/UMLProgramClasses.jpg)
+![UML-ProgramClasses](/2-SoftwareDesign/2.5-UMLProgramClasses/UMLProgramClasse.jpg)
