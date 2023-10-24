@@ -1,0 +1,25 @@
+@startuml
+hide circle
+title UML Concept Classes
+left to right direction
+
+Class Користувач {
+    Логін
+    Пароль
+    Ел.Пошта
+}
+
+CLass ЗапитНаЗамовлення {
+    Дата
+    Ціна
+}
+
+Class Книга {
+    Назва
+    Автор
+    Ціна
+}
+
+Користувач"1" --> "*"ЗапитНаЗамовлення : SEND
+Книга"*" --o "*"ЗапитНаЗамовлення
+@enduml
