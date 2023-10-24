@@ -1,1 +1,1 @@
-![](//www.plantuml.com/plantuml/png/bP4zJiD048NxESMKf307S8726H07MDcJiCBiIkknA10IB0KbN84RM1Oe4JyvmziRiObT8Gfdoz5yxtshMRPgWdOt3QdLHlYobSgqmkUk3jQAk_RKo4fPFGUxlbAkRP1AhNTaAlM1Ixobc9xmZW_yf5ZW4xlqW6rwF8m7zEcv9Df3ngrpmuLVwQq9mdT4d5ytDPxW5KEA8utDn4Pi-Rz8z8i_TDR0C2wEr0Ozlh7Bmw-zMxPxMHmgPobpKSmEPPwxogTdnt-KIxQkQhfQw9wMukfyhby0)
+![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/oleksandrblazhko/ai-214-andrienko/Laboratory_work_7/2-SoftwareDesign/2.7-PlantUML/UseCase.puml)
