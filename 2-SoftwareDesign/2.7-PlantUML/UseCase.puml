@@ -1,0 +1,16 @@
+@startuml
+
+title Usecase Andriienko
+left to right direction
+actor :Студент-користувач:
+
+rectangle Software {
+
+    usecase (Авторизувати користувача)
+    usecase (Створити замовлення)
+
+   :Студент-користувач: -- (Створити замовлення)
+   (Створити замовлення) .> (Авторизувати користувача) : include
+}
+
+@enduml

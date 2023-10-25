@@ -1,0 +1,18 @@
+@startuml
+title Activity Diagram перевірНаявністьКниг()
+
+start
+
+:Online-library checks users order to availability of books; 
+note right: Using iterative testing
+
+if (All books is available?) then (yes)
+  :Your order has been processed;
+else (no)
+  :Book <book_name> is not available now;
+  note right: book_name can be list of books
+  :Error: this order cant be processed;
+endif
+
+stop
+@enduml
