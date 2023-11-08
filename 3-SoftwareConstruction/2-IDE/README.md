@@ -2,7 +2,7 @@
 
 ![1.ConstructDB](/3-SoftwareConstruction/2-IDE/1.ConstructDB.jpg)
 <div align="center">
-  <p>Рисунок 1 – Фрагмент екрану IDE Android Studio зі створенняи моделі Messages</p>
+  <p>Рисунок 1 – Фрагмент екрану IDE Android Studio зі створенням моделі Messages</p>
 </div>
 
 ![2.ConstructDB](/3-SoftwareConstruction/2-IDE/2.ConstructDB.jpg)
