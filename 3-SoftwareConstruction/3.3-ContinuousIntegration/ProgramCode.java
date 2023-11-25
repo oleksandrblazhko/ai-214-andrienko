@@ -1,20 +1,40 @@
 package com.example.myapplication.models;
 
-import com.google.firebase.database.IgnoreExtraProperties;
+import java.util.Date;
 
-@IgnoreExtraProperties
-public class Book {
-    public String bookId;
-    public String title;
-    public String author;
-    public double price;
+public class Message {
+    private String userName;
+    private String textMessage;
+    private long messageTime;
 
-    public Book() { }
+    public Message(){}
+    public Message(String userName, String textMessage) {
+        this.userName = userName;
+        this.textMessage = textMessage;
 
-    public Book(String bookId, String title, String author, double price) {
-        this.bookId = bookId;
-        this.title = title;
-        this.author = author;
-        this.price = price;
+        this.messageTime = new Date().getTime();
     }
-}
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getTextMessage() {
+        return textMessage;
+    }
+
+    public void setTextMessage(String textMessage) {
+        this.textMessage = textMessage;
+    }
+
+    public long getMessageTime() {
+        return messageTime;
+    }
+
+    public void setMessageTime(long messageTime) {
+        this.messageTime = messageTime;
+    }
