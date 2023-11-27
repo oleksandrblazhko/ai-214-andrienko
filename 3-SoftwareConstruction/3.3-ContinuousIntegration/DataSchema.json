@@ -1,0 +1,170 @@
+{
+  "title": "Record of user",
+  "description": "This document records the details of a user",
+  "type": "object",
+  "properties": {
+    "Користувач": {
+      "type": "object",
+      "properties": {
+        "Логін": {
+          "type": "string",
+          "description": "Логін користувача",
+          "pattern": "^[A-Za-z0-9_-]{3,20}$"
+        },
+        "Пароль": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 25,
+          "description": "Пароль користувача"
+        },
+        "Ел.Пошта": {
+          "type": "string",
+          "description": "Ел. пошта користувача",
+          "pattern": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$"
+        }
+      },
+      "required": ["Логін", "Пароль", "Ел.Пошта"]
+    },
+    "ІнформаціяПроКористувача": {
+      "type": "object",
+      "properties": {
+        "Вік": {
+          "type": "integer",
+          "minimum": 15,
+          "description": "Вік користувача"
+        },
+        "ПІБ": {
+          "type": "string",
+          "maxLength": 30,
+          "description": "ПІБ користувача"
+        }
+      },
+      "required": ["Вік", "ПІБ"]
+    },
+    "СомнологКонсультант": {
+      "allOf": [
+        {
+          "$ref": "#/properties/Користувач"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "Стаж праці": {
+              "type": "string",
+              "description": "Стаж праці консультанта"
+            },
+            "Рейтинг": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100,
+              "description": "Рейтинговий бал консультанта"
+            }
+          },
+          "required": ["Стаж праці", "Рейтинг"]
+        }
+      ]
+    },
+    "ЗапитКонсультації": {
+      "type": "object",
+      "properties": {
+        "Проблема": {
+          "type": "string",
+          "maxLength": 300,
+          "description": "Опис проблеми користувача"
+        },
+        "Дата": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Дата створення запиту"
+        }
+      },
+      "required": ["Проблема", "Дата"]
+    },
+    "ВідповідьНаЗапит": {
+      "type": "object",
+      "properties": {
+        "Текст відповіді": {
+          "type": "string",
+          "maxLength": 300,
+          "description": "Текст відповіді на запит щодо консультації"
+        },
+        "Дата": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Дата відповіді на запит"
+        }
+      },
+      "required": ["Текст відповіді", "Дата"]
+    },
+    "ЗапитЗамовлення": {
+      "type": "object",
+      "properties": {
+        "Дата": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Дата створення запиту"
+        },
+        "Ціна": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Ціна поточного замовлення"
+        }
+      },
+      "required": ["Дата", "Ціна"]
+    },
+    "Книга": {
+      "type": "object",
+      "properties": {
+        "Назва": {
+          "type": "string",
+          "maxLength": 50,
+          "description": "Назва книги"
+        },
+        "Автор": {
+          "type": "string",
+          "maxLength": 50,
+          "description": "ПІБ Автори книги"
+        },
+        "Ціна": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Ціна електронної копії книги"
+        }
+      },
+      "required": ["Назва", "Автор", "Ціна"]
+    },
+    "ОнлайнБібліотека": {
+      "type": "object",
+      "properties": {
+        "Назва": {
+          "type": "string",
+          "maxLength": 50,
+          "description": "Назва онлайн бібліотеки"
+        },
+        "Номер телефону": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 13,
+          "description": "Номер телефону для зв'язку з представниками онлайн-бібліотеки"
+        }
+      },
+      "required": ["Назва", "Номер телефону"]
+    },
+    "Замовлення": {
+      "type": "object",
+      "properties": {
+        "Статус": {
+          "type": "string",
+          "maxLength": 30,
+          "description": "Статус виконання замовлення"
+        },
+        "Дата": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Дата початку опрацювання замовлення"
+        }
+      },
+      "required": ["Статус", "Дата"]
+    }
+  }
+}
